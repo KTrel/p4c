@@ -205,7 +205,7 @@ struct Algorithm_Model : public ::Model::Enum_Model {
                         my_hash4("my_hash4"), my_hash5("my_hash5"),
                         my_hash6("my_hash6"), my_hash7("my_hash7"),
                         my_hash8("my_hash8"), my_hash9("my_hash9"),
-                        my_hash10("my_hash10"), {}
+                        my_hash10("my_hash10") {}
 
     ::Model::Elem crc32;
     ::Model::Elem crc32_custom;
