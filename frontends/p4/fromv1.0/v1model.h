@@ -199,13 +199,14 @@ struct Algorithm_Model : public ::Model::Enum_Model {
     Algorithm_Model() : ::Model::Enum_Model("HashAlgorithm"),
                         crc32("crc32"), crc32_custom("crc32_custom"),
                         crc16("crc16"), crc16_custom("crc16_custom"),
-                        random("random"), identity("identity") {}
+                        random("random"), identity("identity"), xxh64('xxh64') {}
     ::Model::Elem crc32;
     ::Model::Elem crc32_custom;
     ::Model::Elem crc16;
     ::Model::Elem crc16_custom;
     ::Model::Elem random;
     ::Model::Elem identity;
+    ::Model::Elem xxh64;
 };
 
 struct Hash_Model : public ::Model::Elem {
