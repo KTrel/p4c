@@ -199,19 +199,20 @@ struct Algorithm_Model : public ::Model::Enum_Model {
     Algorithm_Model() : ::Model::Enum_Model("HashAlgorithm"),
                         crc32("crc32"), crc32_custom("crc32_custom"),
                         crc16("crc16"), crc16_custom("crc16_custom"),
-                        random("random"), identity("identity"), xxh64("xxh64"),
+                        random("random"), xxh64("xxh64"),
                         hash_ex("hash_ex"),
                         my_stupid_hash("my_stupid_hash"),
                         my_hash1("my_hash1"),
-                        my_hash1("my_hash2"),
-                        my_hash1("my_hash3"),
-                        my_hash1("my_hash4"),
-                        my_hash1("my_hash5"),
-                        my_hash1("my_hash6"),
-                        my_hash1("my_hash7"),
-                        my_hash1("my_hash8"),
-                        my_hash1("my_hash9"),
-                        my_hash1("my_hash10"), {}
+                        my_hash2("my_hash2"),
+                        my_hash3("my_hash3"),
+                        my_hash4("my_hash4"),
+                        my_hash5("my_hash5"),
+                        my_hash6("my_hash6"),
+                        my_hash7("my_hash7"),
+                        my_hash8("my_hash8"),
+                        my_hash9("my_hash9"),
+                        my_hash10("my_hash10"),
+                        identity("identity") {}
 
     ::Model::Elem crc32;
     ::Model::Elem crc32_custom;
