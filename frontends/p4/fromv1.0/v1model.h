@@ -200,7 +200,12 @@ struct Algorithm_Model : public ::Model::Enum_Model {
                         crc32("crc32"), crc32_custom("crc32_custom"),
                         crc16("crc16"), crc16_custom("crc16_custom"),
                         random("random"), identity("identity"), xxh64("xxh64"),
-                        my_stupid_hash("my_stupid_hash") {}
+                        my_stupid_hash("my_stupid_hash"), my_hash1("my_hash1"),
+                        my_hash2("my_hash2"), my_hash2("my_hash2"), my_hash3("my_hash3"),
+                        my_hash4("my_hash4"), my_hash5("my_hash5"), my_hash6("my_hash6"),
+                        my_hash7("my_hash7"), my_hash8("my_hash8"), my_hash9("my_hash9"),
+                        my_hash10("my_hash10"), {}
+
     ::Model::Elem crc32;
     ::Model::Elem crc32_custom;
     ::Model::Elem crc16;
@@ -209,6 +214,16 @@ struct Algorithm_Model : public ::Model::Enum_Model {
     ::Model::Elem identity;
     ::Model::Elem xxh64;
     ::Model::Elem my_stupid_hash;
+    ::Model::Elem my_hash1;
+    ::Model::Elem my_hash2;
+    ::Model::Elem my_hash3;
+    ::Model::Elem my_hash4;
+    ::Model::Elem my_hash5;
+    ::Model::Elem my_hash6;
+    ::Model::Elem my_hash7;
+    ::Model::Elem my_hash8;
+    ::Model::Elem my_hash9;
+    ::Model::Elem my_hash10;
 };
 
 struct Hash_Model : public ::Model::Elem {

@@ -98,6 +98,26 @@ SimpleSwitch::convertHashAlgorithm(cstring algorithm) {
         result = "xxh64";
     else if (algorithm == v1model.algorithm.my_stupid_hash.name)
         result = "my_stupid_hash";
+    else if (algorithm == v1model.algorithm.my_hash1.name)
+        result = "my_hash1";
+    else if (algorithm == v1model.algorithm.my_hash2.name)
+        result = "my_hash2";
+    else if (algorithm == v1model.algorithm.my_hash3.name)
+        result = "my_hash3";
+    else if (algorithm == v1model.algorithm.my_hash4.name)
+        result = "my_hash4";
+    else if (algorithm == v1model.algorithm.my_hash5.name)
+        result = "my_hash5";
+    else if (algorithm == v1model.algorithm.my_hash6.name)
+        result = "my_hash6";
+    else if (algorithm == v1model.algorithm.my_hash7.name)
+        result = "my_hash7";
+    else if (algorithm == v1model.algorithm.my_hash8.name)
+        result = "my_hash8";
+    else if (algorithm == v1model.algorithm.my_hash9.name)
+        result = "my_hash9";
+    else if (algorithm == v1model.algorithm.my_hash10.name)
+        result = "my_hash10";
     else
         ::error("%1%: unexpected algorithm", algorithm);
     return result;
@@ -225,7 +245,13 @@ SimpleSwitch::convertExternFunctions(Util::JsonArray *result,
             v1model.algorithm.crc32.name, v1model.algorithm.crc32_custom.name,
             v1model.algorithm.crc16.name, v1model.algorithm.crc16_custom.name,
             v1model.algorithm.random.name, v1model.algorithm.identity.name,
-            v1model.algorithm.xxh64.name, v1model.algorithm.my_stupid_hash.name };
+            v1model.algorithm.xxh64.name, v1model.algorithm.my_stupid_hash.name,
+            v1model.algorithm.my_hash1.name, v1model.algorithm.my_hash2.name,
+            v1model.algorithm.my_hash3.name, v1model.algorithm.my_hash4.name,
+            v1model.algorithm.my_hash5.name, v1model.algorithm.my_hash6.name,
+            v1model.algorithm.my_hash7.name, v1model.algorithm.my_hash8.name,
+            v1model.algorithm.my_hash9.name, v1model.algorithm.my_hash10.name,
+         };
 
         BUG_CHECK(mc->arguments->size() == 5, "Expected 5 arguments for %1%", mc);
         auto primitive = mkPrimitive("modify_field_with_hash_based_offset", result);
