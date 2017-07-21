@@ -119,7 +119,8 @@ enum HashAlgorithm {
     crc16_custom,
     random,
     identity,
-    xxh64
+    xxh64,
+    my_stupid_hash
 }
 
 extern void mark_to_drop();

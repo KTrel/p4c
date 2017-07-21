@@ -832,6 +832,8 @@ const IR::Expression* ProgramStructure::convertHashAlgorithm(IR::ID algorithm) {
         result = v1model.algorithm.identity.Id();
     } else if (algorithm == "xxh64") {
         result = v1model.algorithm.xxh64.Id();
+    } else if (algorithm == "my_stupid_hash") {
+        result = v1model.algorithm.my_stupid_hash.Id();
     } else {
         ::warning("%1%: unexpected algorithm", algorithm);
         result = algorithm;
