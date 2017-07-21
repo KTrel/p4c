@@ -211,7 +211,6 @@ struct Algorithm_Model : public ::Model::Enum_Model {
                         my_hash7("my_hash7"),
                         my_hash8("my_hash8"),
                         my_hash9("my_hash9"),
-                        my_hash10("my_hash10"),
                         identity("identity") {}
 
     ::Model::Elem crc32;
@@ -232,7 +231,6 @@ struct Algorithm_Model : public ::Model::Enum_Model {
     ::Model::Elem my_hash7;
     ::Model::Elem my_hash8;
     ::Model::Elem my_hash9;
-    ::Model::Elem my_hash10;
 };
 
 struct Hash_Model : public ::Model::Elem {

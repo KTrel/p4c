@@ -118,8 +118,6 @@ SimpleSwitch::convertHashAlgorithm(cstring algorithm) {
         result = "my_hash8";
     else if (algorithm == v1model.algorithm.my_hash9.name)
         result = "my_hash9";
-    else if (algorithm == v1model.algorithm.my_hash10.name)
-        result = "my_hash10";
     else
         ::error("%1%: unexpected algorithm", algorithm);
     return result;
