@@ -121,6 +121,16 @@ enum HashAlgorithm {
     identity,
     xxh64,
     hash_ex,
+    my_stupid_hash,
+    my_hash1,
+    my_hash2,
+    my_hash3,
+    my_hash4,
+    my_hash5,
+    my_hash6,
+    my_hash7,
+    my_hash8,
+    my_hash9
 }
 
 extern void mark_to_drop();
